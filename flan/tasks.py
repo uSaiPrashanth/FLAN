@@ -35,7 +35,7 @@ from flan import utils
 ShotConfig = few_shot.ShotConfig
 
 # This is a placeholder, for the paper we used an internal vocabulary and model.
-VOCAB_FILE = 'gs://t5-data/vocabs/mc4.250000.100extra/sentencepiece.model'
+VOCAB_FILE = 'gs://t5-data/vocabs/cc_all.32000.100extra/sentencepiece.model'
 FLAN_VOCABULARY = seqio.SentencePieceVocabulary(VOCAB_FILE)
 
 FLAN_OUTPUT_FEATURES = {

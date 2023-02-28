@@ -24,6 +24,10 @@ from flan import templates  # pylint: disable=unused-import
 
 mixing_rate_3k = functools.partial(seqio.mixing_rate_num_examples, maximum=3000)
 
+seqio.add_global_cache_dirs([
+    "gs://neo-datasets/zphang/multitask/seqio/v2"
+])
+
 split = task_splits.generate_superglue_num_tasks_ablation()[-1]
 
 seqio.MixtureRegistry.add(
